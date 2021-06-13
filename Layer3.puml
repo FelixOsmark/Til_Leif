@@ -24,7 +24,7 @@ alt Bruger oprettet
 else Bruger ikke oprettet
     Security_services -> UI: invalid NemID
    deactivate Security_services
-
+    Citizen <- UI: Opret bruger med NemID
     deactivate UI
 end
 
