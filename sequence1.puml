@@ -28,12 +28,12 @@ activate Smitteapp
 alt samtykke givet
     Smitteapp --> CoronaApp: Samtykke givet
 
-    CoronaApp -> Sundhedspersonale: Viser patientinfo
+    CoronaApp -> Sundhedspersonale: Viser alt patientinfo
 else samtykke ikke givet
     Smitteapp --> CoronaApp: Samtykke ikke givet
 deactivate Smitteapp
 
-    CoronaApp -> Sundhedspersonale: Ingen info
+    CoronaApp -> Sundhedspersonale: Geolocation og sensordata vises ikke
 deactivate CoronaApp
 end
 
